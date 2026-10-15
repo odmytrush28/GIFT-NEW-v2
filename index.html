@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CREATE — My Five Gifts | Olesia Dmytrush</title>
+<meta name="description" content="Olesia Dmytrush — CREATE. Five gifts: Resilience, Creativity, Connection, Problem-Solving and Leadership, with the jobs I can do and how I will grow each one.">
+<meta name="theme-color" content="#0a0807">
+<meta property="og:title" content="CREATE — My Five Gifts | Olesia Dmytrush">
+<meta property="og:description" content="I don't wait for a perfect beginning — I make a beginning.">
+<meta property="og:image" content="og-image.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="avatar.webp" as="image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#gifts">Skip to the five gifts</a>
+<canvas id="fx" class="fx" aria-hidden="true"></canvas>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2 20 9.5 7l4 6.5 2.5-3.5L22 20Z" fill="currentColor"/><path d="m8 10 1.5-3 1.8 3-1.6-.8Z" fill="#0a0807" opacity=".55"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M12 2.5a6.8 6.8 0 0 0-4 12.3c.6.5 1 1.2 1 2V18h6v-1.2c0-.8.4-1.5 1-2a6.8 6.8 0 0 0-4-12.3Z" fill="currentColor"/><rect x="9" y="19.2" width="6" height="1.6" rx=".8" fill="currentColor"/><rect x="10" y="21.6" width="4" height="1.4" rx=".7" fill="currentColor"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.2" fill="currentColor"/><circle cx="5" cy="9.5" r="2.4" fill="currentColor"/><circle cx="19" cy="9.5" r="2.4" fill="currentColor"/><path d="M5.5 20c0-3.8 2.9-6.6 6.5-6.6s6.5 2.8 6.5 6.6Z" fill="currentColor"/><path d="M1 19.5c0-2.8 1.8-4.8 4-4.8.9 0 1.6.2 2.2.6A8.3 8.3 0 0 0 4.6 19.5Zm22 0c0-2.8-1.8-4.8-4-4.8-.9 0-1.6.2-2.2.6a8.3 8.3 0 0 1 2.6 4.2Z" fill="currentColor"/></symbol>
+  <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M4 7h4a2.5 2.5 0 1 1 5 0h4v4a2.5 2.5 0 1 1 0 5v4h-4.5a2.5 2.5 0 1 0-4 0H4v-4.5a2.5 2.5 0 1 0 0-4Z" fill="currentColor"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><rect x="3" y="14" width="3.6" height="7" rx=".6" fill="currentColor"/><rect x="8.6" y="11" width="3.6" height="10" rx=".6" fill="currentColor"/><rect x="14.2" y="8" width="3.6" height="13" rx=".6" fill="currentColor"/><path d="m3 10 6-5 4 3 7-6m0 0h-4m4 0v4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5Z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4.5" width="4" height="15" rx="1" fill="currentColor"/><rect x="14" y="4.5" width="4" height="15" rx="1" fill="currentColor"/></symbol>
+  <symbol id="i-replay" viewBox="0 0 24 24"><path d="M12 5V1.8L7.5 6 12 10.2V7a5.5 5.5 0 1 1-5.5 5.5H4.4A7.6 7.6 0 1 0 12 5Z" fill="currentColor"/></symbol>
+</svg>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="CREATE — back to top">CREATE<span>.</span></a>
+  <nav aria-label="Main">
+    <a href="#gifts">Five Gifts</a>
+    <a href="#approach">My Approach</a>
+  </nav>
+  <button class="motion-toggle" id="motionToggle" type="button" aria-pressed="false" title="Turn animations off or on">
+    <span class="motion-dot" aria-hidden="true"></span><span class="motion-label">Reduce motion</span>
+  </button>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow reveal">Olesia Dmytrush</p>
+    <p class="subtitle reveal">Planetary Responsibility</p>
+    <h1 id="hero-title" class="reveal"><span class="h1-word">CREATE</span><span class="h1-dot">.</span></h1>
+    <p class="lede reveal">I create possibilities through <em>resilience</em>, <em>imagination</em>, and <em>connection</em>. I don't wait for a perfect beginning — I make a beginning.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-gold" href="#gifts">Discover my five gifts</a>
+    </div>
+    <ul class="hero-stats reveal" aria-label="At a glance">
+      <li><strong>5</strong><span>Gifts</span></li>
+      <li><strong>10</strong><span>Career roles</span></li>
+      <li><strong>25</strong><span>Growth actions</span></li>
+    </ul>
+  </div>
+
+  <div class="portrait-wrap reveal" id="portrait">
+    <div class="halo" aria-hidden="true"></div>
+    <div class="ring ring-1" aria-hidden="true"></div>
+    <div class="ring ring-2" aria-hidden="true"></div>
+    <figure class="portrait" id="portraitInner">
+      <img src="avatar.webp" alt="My avatar: a smiling young woman with long, wavy blonde hair, hazel eyes, a cream blazer over a black top and delicate gold jewelry" width="900" height="900">
+    </figure>
+    <ol class="orbit" aria-label="Jump to a gift">
+      <li style="left:-0.41%;top:33.62%"><button type="button" data-gift="1" aria-label="Gift 01: Resilience"><svg aria-hidden="true"><use href="#i-mountain"/></svg><span>Resilience</span></button></li>
+      <li style="left:50.00%;top:-3.00%"><button type="button" data-gift="2" aria-label="Gift 02: Creativity"><svg aria-hidden="true"><use href="#i-bulb"/></svg><span>Creativity</span></button></li>
+      <li style="left:100.41%;top:33.62%"><button type="button" data-gift="3" aria-label="Gift 03: Connection"><svg aria-hidden="true"><use href="#i-people"/></svg><span>Connection</span></button></li>
+      <li style="left:81.15%;top:92.88%"><button type="button" data-gift="4" aria-label="Gift 04: Problem-Solving"><svg aria-hidden="true"><use href="#i-puzzle"/></svg><span>Problem-Solving</span></button></li>
+      <li style="left:18.85%;top:92.88%"><button type="button" data-gift="5" aria-label="Gift 05: Leadership"><svg aria-hidden="true"><use href="#i-chart"/></svg><span>Leadership</span></button></li>
+    </ol>
+    <div class="anim-controls" role="group" aria-label="Animation controls">
+      <button type="button" class="ctl" id="replay"><svg aria-hidden="true"><use href="#i-replay"/></svg><span>Replay animation</span></button>
+      <button type="button" class="ctl" id="pause" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pause"/></svg><span>Pause</span></button>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Resilience</span><i>✦</i><span>Creativity</span><i>✦</i><span>Connection</span><i>✦</i><span>Problem-Solving</span><i>✦</i><span>Leadership</span><i>✦</i>
+    <span>Resilience</span><i>✦</i><span>Creativity</span><i>✦</i><span>Connection</span><i>✦</i><span>Problem-Solving</span><i>✦</i><span>Leadership</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ============ FIVE GIFTS ============ -->
+<section class="section gifts" id="gifts" aria-labelledby="gifts-title">
+  <div class="section-head">
+    <p class="eyebrow">What I bring</p>
+    <h2 id="gifts-title">My Five Gifts</h2>
+    <p class="section-lede">Open a gift to see two jobs I can do with it and five ways I will keep growing it.</p>
+    <div class="head-actions">
+      <button class="link-btn" type="button" id="openAll">Open all gifts</button>
+      <span aria-hidden="true">·</span>
+      <button class="link-btn" type="button" id="closeAll">Close all</button>
+    </div>
+  </div>
+
+  <div class="cards">
+    <!-- 01 -->
+    <article class="card" id="gift-1" data-gift="1">
+      <button class="card-toggle" type="button" aria-expanded="false" aria-controls="gift-1-details">
+        <span class="card-media"><img src="gift-1.webp" alt="My avatar standing confidently on a mountain summit at sunrise" width="294" height="218" loading="lazy"><svg class="card-icon" aria-hidden="true"><use href="#i-mountain"/></svg></span>
+        <span class="card-head"><span class="card-num">01</span><span class="card-title">Resilience</span><span class="card-quote">I turn challenges into growth.</span><span class="card-cta"><span class="cta-open">Explore gift</span><span class="cta-close">Close</span><i aria-hidden="true"></i></span></span>
+      </button>
+      <div class="card-details" id="gift-1-details" role="region" aria-label="Resilience details">
+        <div class="details-inner">
+          <h3>Jobs I can do</h3>
+          <ul class="jobs"><li>QA / Software Tester</li><li>Business Analyst</li></ul>
+          <h3>How I will grow it</h3>
+          <ol class="growth"><li>See challenges as opportunities.</li><li>Keep a positive mindset.</li><li>Learn from setbacks.</li><li>Ask for support when needed.</li><li>Stay focused on my long-term goals.</li></ol>
+        </div>
+      </div>
+    </article>
+    <!-- 02 -->
+    <article class="card" id="gift-2" data-gift="2">
+      <button class="card-toggle" type="button" aria-expanded="false" aria-controls="gift-2-details">
+        <span class="card-media"><img src="gift-2.webp" alt="My avatar in a creative studio, sketching new ideas under a glowing light bulb" width="270" height="218" loading="lazy"><svg class="card-icon" aria-hidden="true"><use href="#i-bulb"/></svg></span>
+        <span class="card-head"><span class="card-num">02</span><span class="card-title">Creativity</span><span class="card-quote">I turn ideas into action.</span><span class="card-cta"><span class="cta-open">Explore gift</span><span class="cta-close">Close</span><i aria-hidden="true"></i></span></span>
+      </button>
+      <div class="card-details" id="gift-2-details" role="region" aria-label="Creativity details">
+        <div class="details-inner">
+          <h3>Jobs I can do</h3>
+          <ul class="jobs"><li>UI/UX Tester</li><li>Content Creator</li></ul>
+          <h3>How I will grow it</h3>
+          <ol class="growth"><li>Keep exploring new ideas.</li><li>Try different approaches.</li><li>Stay curious and open-minded.</li><li>Find inspiration in everyday life.</li><li>Turn ideas into real projects.</li></ol>
+        </div>
+      </div>
+    </article>
+    <!-- 03 -->
+    <article class="card" id="gift-3" data-gift="3">
+      <button class="card-toggle" type="button" aria-expanded="false" aria-controls="gift-3-details">
+        <span class="card-media"><img src="gift-3.webp" alt="My avatar smiling and connecting with a diverse group of people" width="277" height="218" loading="lazy"><svg class="card-icon" aria-hidden="true"><use href="#i-people"/></svg></span>
+        <span class="card-head"><span class="card-num">03</span><span class="card-title">Connection</span><span class="card-quote">I bring people together.</span><span class="card-cta"><span class="cta-open">Explore gift</span><span class="cta-close">Close</span><i aria-hidden="true"></i></span></span>
+      </button>
+      <div class="card-details" id="gift-3-details" role="region" aria-label="Connection details">
+        <div class="details-inner">
+          <h3>Jobs I can do</h3>
+          <ul class="jobs"><li>Project Coordinator</li><li>Customer Success Specialist</li></ul>
+          <h3>How I will grow it</h3>
+          <ol class="growth"><li>Listen with empathy and respect.</li><li>Build trusting relationships.</li><li>Value different perspectives.</li><li>Communicate clearly and kindly.</li><li>Support others and celebrate their success.</li></ol>
+        </div>
+      </div>
+    </article>
+    <!-- 04 -->
+    <article class="card" id="gift-4" data-gift="4">
+      <button class="card-toggle" type="button" aria-expanded="false" aria-controls="gift-4-details">
+        <span class="card-media"><img src="gift-4.webp" alt="My avatar solving a glowing digital puzzle surrounded by holographic screens" width="270" height="218" loading="lazy"><svg class="card-icon" aria-hidden="true"><use href="#i-puzzle"/></svg></span>
+        <span class="card-head"><span class="card-num">04</span><span class="card-title">Problem-Solving</span><span class="card-quote">I find better ways forward.</span><span class="card-cta"><span class="cta-open">Explore gift</span><span class="cta-close">Close</span><i aria-hidden="true"></i></span></span>
+      </button>
+      <div class="card-details" id="gift-4-details" role="region" aria-label="Problem-Solving details">
+        <div class="details-inner">
+          <h3>Jobs I can do</h3>
+          <ul class="jobs"><li>Cybersecurity Analyst</li><li>IT Support Specialist</li></ul>
+          <h3>How I will grow it</h3>
+          <ol class="growth"><li>Break big problems into smaller steps.</li><li>Analyze data and look for patterns.</li><li>Stay calm under pressure.</li><li>Learn from past experiences.</li><li>Keep learning new tools and technologies.</li></ol>
+        </div>
+      </div>
+    </article>
+    <!-- 05 -->
+    <article class="card" id="gift-5" data-gift="5">
+      <button class="card-toggle" type="button" aria-expanded="false" aria-controls="gift-5-details">
+        <span class="card-media"><img src="gift-5.webp" alt="My avatar confidently leading a team meeting in front of a growth chart" width="290" height="218" loading="lazy"><svg class="card-icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
+        <span class="card-head"><span class="card-num">05</span><span class="card-title">Leadership</span><span class="card-quote">I inspire and create impact.</span><span class="card-cta"><span class="cta-open">Explore gift</span><span class="cta-close">Close</span><i aria-hidden="true"></i></span></span>
+      </button>
+      <div class="card-details" id="gift-5-details" role="region" aria-label="Leadership details">
+        <div class="details-inner">
+          <h3>Jobs I can do</h3>
+          <ul class="jobs"><li>Team Lead (QA / Operations)</li><li>Product &amp; Business Analysis Lead</li></ul>
+          <h3>How I will grow it</h3>
+          <ol class="growth"><li>Lead by example.</li><li>Encourage and empower others.</li><li>Create a positive and inclusive environment.</li><li>Take initiative and own my growth.</li><li>Help others reach their potential.</li></ol>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ APPROACH ============ -->
+<section class="section approach" id="approach" aria-labelledby="approach-title">
+  <div class="approach-portrait"><img src="avatar.webp" alt="" width="900" height="900" loading="lazy"></div>
+  <div class="approach-copy">
+    <p class="eyebrow">My approach</p>
+    <h2 id="approach-title">I don't wait for a perfect beginning — <em>I make a beginning.</em></h2>
+    <p>Every challenge is a chance to grow, every idea deserves to become something real, and every person I work with makes the result stronger. These five gifts are how I show up — in quality assurance, analysis, coordination and leadership.</p>
+    <ul class="pillars">
+      <li><span>01</span>Curious mind</li>
+      <li><span>02</span>Creative spirit</li>
+      <li><span>03</span>Never giving up</li>
+    </ul>
+    <a class="btn btn-ghost" href="#gifts">Explore the gifts</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-phrase">Curious Mind · Creative Spirit · Never Giving Up</p>
+  <p class="footer-meta">© 2026 Olesia Dmytrush · CREATE — My Five Gifts · i.c.stars</p>
+  <a class="to-top" href="#top">Back to top ↑</a>
+</footer>
+
+<script src="main.js" defer></script>
+<script type="module" src="fx.js"></script>
+</body>
+</html>
